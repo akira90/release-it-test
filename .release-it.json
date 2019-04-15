@@ -1,0 +1,16 @@
+{
+  "git": {
+    "tagName": "v${version}",
+    "requireCleanWorkingDir": false,
+    "commit": false
+  },
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": true,
+    "assets": null
+  },
+  "pkgFiles": null,
+  "increment": "conventional:angular"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "release-it-test",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "release-it": "^10.4.0",
+    "jest": "^23.6.0",
+    "jest-junit": "^5.2.0",
+    "jest-mock-console": "^0.4.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-source-map-support": "^2.0.1"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.3",
+    "@babel/core": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "source-map-support": "^0.4.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lqueryvg/release-it-test.git"
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true,
+      "bump": false,
+      "commit": true
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/mock-helpers/*.js"
+    ],
+    "automock": false,
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    },
+    "testEnvironment": "node"
+  },
+  "jest-junit": {
+    "output": "./test-results/results/test-results.xml"
+  }
+}
