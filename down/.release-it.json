@@ -11,6 +11,9 @@
     "release": true,
     "assets": null
   },
-  "pkgFiles": null,
-  "increment": "conventional:angular"
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular"
+    }
+  }
 }
