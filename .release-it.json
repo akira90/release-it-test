@@ -3,7 +3,9 @@
     "tagName": "v${version}",
     "requireCleanWorkingDir": false,
     "requireUpstream": false,
-    "commit": false
+    "commit": false,
+    "pushArgs": "--tags",
+    "pushRepo": null
   },
   "npm": false,
   "github": {
