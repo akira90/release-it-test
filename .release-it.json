@@ -5,9 +5,7 @@
     "requireUpstream": false,
     "commit": false
   },
-  "npm": {
-    "publish": false
-  },
+  "npm": false,
   "github": {
     "release": true,
     "assets": null
